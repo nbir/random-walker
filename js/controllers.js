@@ -14,7 +14,7 @@ $("#agents").slider({ value: 0, min: 0, max: 100, step: 10,
 	}
 });
 
-$("#obstacle").slider({ value: 0, min: 0, max: 3, step: 1,
+$("#obstacle").slider({ value: 0, min: 0, max: 4, step: 1,
 	slide: function(event, ui) {
 		$("#obstacle-val").text(ui.value);
 		obstacle_type = parseInt(ui.value);
