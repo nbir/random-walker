@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+		canvas { padding: 0px; border: solid 5px #eee; background-color: white; }
+		.slider { margin-top: 3px; }
+	</style>
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	<script>
+	</script>
+
+	<!--<script src="js/random-walker.js"></script>-->
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<h3>Multi-agent Random Walker</h3>
+		</div>
+		<div class="row">
+			<div class="span7">
+				<canvas id="stockGraph" width="500" height="500"></canvas>
+			</div>
+
+			<div class="span5">
+				<div class="row">
+					<div class="span2">
+						<div class="slider" id="agents"></div>
+					</div>
+					<div class="span3">
+						<p>Number of agents: <span id="agents-val">0</span></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2">
+						<div class="slider" id="obstacle"></div>
+					</div>
+					<div class="span3">
+						<p>Obstacle course: <span id="obstacle-val">0</span></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2">
+						<div class="slider" id="fps"></div>
+					</div>
+					<div class="span3">
+						<p>Frames per second: <span id="fps-val">30</span></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span2">
+						<div class="slider" id="steps"></div>
+					</div>
+					<div class="span3">
+						<p>Time steps: <span id="steps-val">1000</span></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="offset2 span3">
+						<p>Counter: <span id="counter-val">0</span></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span5">
+						<button id="run" class="btn btn-large btn-success" type="button"><i class="icon-play"></i> Run</button>
+						<button id="stop" class="btn btn-large btn-danger" type="button"><i class="icon-stop"></i> Stop</button>
+						<button id="clear" class="btn btn-large btn-info" type="button"><i class="icon-trash"></i> Clear</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/models.js"></script>
+	<script src="js/views.js"></script>
+	<script src="js/controllers.js"></script>
+</body>
+
+</html>
